@@ -1,0 +1,25 @@
+     <div class="entry">
+      <table width="95%" border="0" cellpadding="0" cellspacing="0">
+       <tr>
+        <td width="47" align="center"></td>
+        <td width="56" height="79" align="center"><span style="vertical-align: middle">
+         <script type="text/javascript">
+         digg_url = '[% entry.url %]';
+         </script>
+         <script src="http://digg.com/tools/diggthis.js" type="text/javascript"></script>
+         </span>
+        </td>
+        <td width="100" height="79" align="center"><a href="[% entry.url %]" title="See '[% entry.title %]'"><img src="[% entry.icon %]" style="vertical-align: middle" width="76" height="76" alt="[% entry.title %]" class="thumbnail"></a></td>
+        <td>
+         <p><a href="[% entry.url %]" title="See '[% entry.title %]'" class="title">[% entry.title %]</a></p>
+         <p class="desc"><span class="source">[% entry.host %] &mdash;</span> [% entry.description %]<a class="more" href="[% entry.digg_url %]" target="_blank">More...</a> <span class="category">(<a href="http://digg.com/[% entry.digg_short_category %]" target="_blank">[% entry.digg_category %]</a>)</span></p>
+         <div class="details">
+          <span class="comments"><a href="[% entry.digg_url %]">Comments</a></span>
+          <span class="email"><a href="[% entry.digg_url %]/share">Email</a></span>
+          <span class="date">Added <span class="gray">[% entry.date_added %]</span></span>
+          <a href="http://digg.com/users/[% entry.user %]" target="_blank"><img src="[% entry.user_avatar %]" class="avatar" width="16" height="16" />[% entry.user %]</a>
+          </div> 
+        </td>
+       </tr>
+      </table>
+  </div>
